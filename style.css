@@ -630,18 +630,7 @@ section {
 # Main sponsor
 --------------------------------------------------------------*/
 #mainspo{
-  padding: 15px 0px;
-}
-#mainspo .clients .container .comingsoon{
-  color: #445d89d6;
-  text-shadow: 1px 1px #202749;
-  margin-bottom: 50px;
-  font-size: 24px;
-  padding-top: 36px;
-}
-#mainspo .clients .container .comingsoon span{
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-  animation-delay: 1s;
+  padding-top: 15px;
 }
 .clients .section-title{
   padding-bottom: 10px;
@@ -650,66 +639,103 @@ section {
   padding: 12px 0;
   text-align: center;
 }
-.clients img {
-  width: 175px;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-  filter: grayscale(100);
-}
-.clients img:hover {
-  filter: none;
-  transform: scale(1.1);
-}
-@media (max-width: 767.98px) {
-  .clients img {
-    max-width: 105px;
-    filter: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .clients img {
-    max-width: 120px;
-  }
+section#mainspo {
+  padding-bottom: 0px;
 }
 
 /*--------------------------------------------------------------
 # Sponsor Sub
 --------------------------------------------------------------*/
 
-.spons {
-  padding-top: 10px;
-  padding-bottom: 35px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+.Exlarge .container .wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  place-items: center;
 }
-@media(min-width: 579px){
-  .spons .col{
-  justify-content: center !important;
-  align-items: center !important;
-  }
+.Exlarge .container .wrapjun {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  place-items: center;
+  width: 45%;
+  margin: auto;
 }
-.spons img {
-  width: 150px;
+.Large .container .wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  place-items: center;
+}
+.Large .container .wrapjun {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  place-items: center;
+  margin: auto;
+  /* width: 75%; */ /*Kalo ada 2*/
+  width: 33%; /*Kalo ada 1*/
+}
+.Standard .container .wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  place-items: center;
+}
+.Standard .container .wrapjun {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  place-items: center;
+  margin: auto;
+  /* width: 25%;  */ /* Kalo ada 1 */
+  /* width: 50%; */ /* Kalo ada 2 */
+  width: 75%; /* Kalo ada 3 */
+}
+.small .container .wrap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  place-items: center;
+}
+.small .container .wrapjun {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  place-items: center;
+  margin: auto;
+  /* width: 17%; */ /* Kalo ada 1 */
+  /* width: 34%; */ /* Kalo ada 2 */
+  /* width: 51%; */ /* Kalo ada 3 */
+  /* width: 68%; */ /* Kalo ada 4 */
+  width: 85%;
+}
+.Exlarge img, .Large img, .Standard img, .small img {
   transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 5px 0;
 }
-.spons img:hover {
+.Exlarge img:hover, .Large img:hover, .Standard img:hover, .small img:hover {
   filter: none;
   transform: scale(1.1);
 }
-@media (max-width: 767.98px) {
-  .spons img {
-    max-width:80px;
+.spons .container .justify-content-center{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+@media (min-width: 770px) {
+  .Exlarge img {
+    width: 350px;
+  }
+  .Large img {
+    width: 300px;
+  }
+  .Standard img {
+    width: 220px;
+  }
+  .small img {
+    width: 100px;
   }
 }
-@media (max-width: 575.98px) {
-  .spons img {
-    max-width:95px;
-  }
-}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
