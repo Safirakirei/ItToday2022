@@ -653,28 +653,11 @@ section#mainspo {
   gap: 30px;
   place-items: center;
 }
-.Exlarge .container .wrapjun {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
-  place-items: center;
-  width: 45%;
-  margin: auto;
-}
 .Large .container .wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   place-items: center;
-}
-.Large .container .wrapjun {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
-  place-items: center;
-  margin: auto;
-  /* width: 75%; */ /*Kalo ada 2*/
-  width: 33%; /*Kalo ada 1*/
 }
 .Standard .container .wrap {
   display: grid;
@@ -682,33 +665,11 @@ section#mainspo {
   gap: 30px;
   place-items: center;
 }
-.Standard .container .wrapjun {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  place-items: center;
-  margin: auto;
-  /* width: 25%;  */ /* Kalo ada 1 */
-  /* width: 50%; */ /* Kalo ada 2 */
-  width: 75%; /* Kalo ada 3 */
-}
 .small .container .wrap {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 30px;
   place-items: center;
-}
-.small .container .wrapjun {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  place-items: center;
-  margin: auto;
-  /* width: 17%; */ /* Kalo ada 1 */
-  /* width: 34%; */ /* Kalo ada 2 */
-  /* width: 51%; */ /* Kalo ada 3 */
-  /* width: 68%; */ /* Kalo ada 4 */
-  width: 85%;
 }
 .Exlarge img, .Large img, .Standard img, .small img {
   transition: all 0.4s ease-in-out;
